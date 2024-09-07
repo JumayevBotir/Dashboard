@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <title>Document</title>
+</head>
+<body>
+   <div class="dashboard-list-wrapper">
+   
+    <div class="siderbar scroll-style">
+        <div class="logo">
+            <img width="68" height="54" src="./images/image/logo.png" alt="">
+            <h1 class="logo-text">Mgroup Hospital</h1>
+        </div>
+        <nav class="nav">
+            <ul class="nav-items">
+                <li onclick="menuOnCLick(0)" class="nav-item"><img class="nav-icon" src="./images/icons/dashboard.png" width="22" height="24" alt=""><a class="nav-link" href="javascript:;">Dashboard</a></li>
+                <li onclick="menuOnCLick(1)" class="nav-item"><img class="nav-icon" src="./images/icons/manegment.png" width="22" height="24" alt=""><a class="nav-link" href="javascript:;">Patients management</a></li>
+                <li onclick="menuOnCLick(2)" class="nav-item"><img class="nav-icon" src="./images/icons/calnedar.png" width="22" height="24" alt=""><a class="nav-link" href="javascript:;">Appointments</a></li>
+                <li onclick="menuOnCLick(3)" class="nav-item"><img class="nav-icon" src="./images/icons/televithor.png" width="22" height="24" alt=""><a class="nav-link" href="javascript:;">Transactions</a></li>
+                <li onclick="menuOnCLick(4)" class="nav-item"><img class="nav-icon" src="./images/icons/employees.png" width="22" height="24" alt=""><a class="nav-link" href="javascript:;">Employers</a></li>
+                <li onclick="menuOnCLick(5)" class="nav-item"><img class="nav-icon" src="./images/icons/record.png" width="22" height="24" alt=""><a class="nav-link" href="javascript:;">Health records</a></li>
+                <li onclick="menuOnCLick(6)" class="nav-item"><img class="nav-icon" src="./images/icons/analitcs.png" width="22" height="24" alt=""><a class="nav-link" href="javascript:;">Analytics</a></li>
+                <li onclick="menuOnCLick(7)" class="nav-item"><img class="nav-icon" src="./images/icons/support.png" width="22" height="24" alt=""><a class="nav-link" href="javascript:;">Help & Support</a></li>
+                <hr>
+                <li onclick="menuOnCLick(8)" class="nav-item"><img class="nav-icon" src="./images/icons/profil.png" width="22" height="24" alt=""><a class="nav-link" href="javascript:;">Profile</a></li>
+                <li onclick="menuOnCLick(9)" class="nav-item"><img class="nav-icon" src="./images/icons/setting.png" width="22" height="24" alt=""><a class="nav-link" href="javascript:;">Settings</a></li>
+                <li onclick="menuOnCLick(10)" class="nav-item"><img class="nav-icon" src="./images/icons/logout.png" width="22" height="24" alt=""><a class="nav-link" href="javascript:;">Log Out</a></li>
+                <li onclick="menuOnCLick(11)" class="nav-item item13"><a class="nav-link">Dark Mode</a><div class="switch" id="switch" onclick="switchClick()"><div class="switch-left"></div> <div class="switch-riht"></div> </di></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-wrapper">
+    <div class="app">
+        <div class="app-in">
+            <img src="./images/icons/notifcation.png" alt="" class="qongiroq">
+        <img src="./images/image/appimg.png" alt="">
+        <img src="./images/icons/arrow-right.png" alt="" class="app-right">
+        </div>
+    </div>
+    <div class="main" id="main-render">
+        <div class="dashboard1">
+            <h1 class="dasboard1-title">
+                Dashboard
+            </h1>
+            <div class="row" id="card-info">
+              
+                 <div class="col-3" id="child-card">
+                    <div class="car-info">
+                        <p class="card-title">No of Admitted Patients</p>
+                        <div  class="card-info-pricer">
+                            <p>1070</p>
+                            <div class="card-info-arrow" style="background-color: var(--color-tag2); color: 
+    #0AC60A;">-15%<img src="./images/icons/arrow-bottom-main.png" alt=""></div>
+                        </div>
+                        <p class="card-title-bottom">Compared to (2300 last quarter)</p>
+
+                    </div>
+                 </div>
+                 <div class="col-3" id="child-card">
+                    <div class="car-info">
+                        <p>No of Admitted Patients</p>
+                        <div  class="card-info-pricer">
+                            <p>1070</p>
+                            <div class="card-info-arrow" style="background-color: var(--color-tag2); color: 
+    #0AC60A;">-15%<img src="./images/icons/arrow-bottom-main.png" alt=""></div>
+                        </div>
+                        <p>Compared to (2300 last quarter)</p>
+
+                    </div>
+                 </div>
+                 <div class="col-3" id="child-card">
+                    <div class="car-info">
+                        <p>No of Admitted Patients</p>
+                        <div class="card-info-pricer">
+                            <p>1070</p>
+                            <div class="card-info-arrow" style="background-color: var(--color-tag2); color: 
+    #0AC60A;">-15%<img src="./images/icons/arrow-bottom-main.png" alt=""></div>
+                        </div>
+                        <p>Compared to (2300 last quarter)</p>
+
+                    </div>
+                 </div>
+                 <div class="col-3" id="child-card">
+                    <div class="car-info">
+                        <p>No of Admitted Patients</p>
+                        <div  class="card-info-pricer">
+                            <p>1070</p>
+                            <div class="card-info-arrow" style="background-color: var(--color-tag2); color: 
+    #0AC60A;">-15%<img src="./images/icons/arrow-bottom-main.png" alt=""></div>
+                        </div>
+                        <p>Compared to (2300 last quarter)</p>
+
+                    </div>
+                 </div>
+            </div>
+            <div class="dashboard1-statistika">
+                <div class="chart-container1">
+                    <canvas id="myBarChart"></canvas>
+                </div> 
+                <div class="chart-container">
+                    <canvas id="myPieChart"></canvas>
+                </div>
+                 
+                
+            </div>
+            <div class="dashboard1-box">
+                <div class="dashboard1-box_left">
+                        <div class="dashboard1-box_left_top">
+                            <h2 class="dashboard1-box_left_title">Patient List </h2>
+                            <div class="dashboard1-box_left_item">
+                                <div class="dashboard1-box_left_in">
+                                    <a href="" class="dashboard1-link">Weekly</a>
+                                    <p class="chiziq"></p>
+                                </div> 
+                                <div class="dashboard1-box_left_in">
+                                    <a href="" class="dashboard1-link">Monthly</a>
+                                    <p class="chiziq"></p>
+                                </div>
+                                <div class="dashboard1-box_left_in">
+                                    <a href="" class="dashboard1-link">Quarterly</a>
+                                    <p class="chiziq"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dashboard1-left_bottom">
+                            <div class="dashboatd1-left_bottom_item">
+                                <h2 class="dashboard1-left_bottom_title">
+                                    Name
+                                </h2>
+                                <div class="dashboard1-left_bottom_in">
+                                    <img src="./images/image/dashboard1img1.png" alt="">
+                                    <p class="dashboard1-left_text">
+                                        Ola Akintola
+                                    </p>
+                                </div>
+                                <div class="dashboard1-left_bottom_in">
+                                    <img src="./images/image/dashboard1img2.png" alt="">
+                                    <p class="dashboard1-left_text">
+                                        Janet Paul
+                                    </p>
+                                </div>
+                                <div class="dashboard1-left_bottom_in">
+                                    <img src="./images/image/dashboard1img3.png" alt="">
+                                    <p class="dashboard1-left_text">
+                                        Areogun Joe
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="dashboard1-left_bottom_item">
+                                <h2 class="dashboard1-left_bottom_subtitle">Admission Date</h2>
+                                <p class="dashboard1-left_bottom_subtext">12-09-2023</p>
+                                <p class="dashboard1-left_bottom_subtext">12-09-2023</p>
+                                <p class="dashboard1-left_bottom_subtext">12-09-2023</p>
+                            </div>
+                            <div class="dashboard1-left_bottom_item">
+                                <h2 class="dashboard1-left_bottom_subtitle">Room Number</h2>
+                                <p class="dashboard1-left_bottom_subtext">UI/201</p>
+                                <p class="dashboard1-left_bottom_subtext">UI/201</p>
+                                <p class="dashboard1-left_bottom_subtext">UI/201</p>
+                            </div>
+                            <div class="dashboard1-left_bottom_item">
+                                <h2 class="dashboard1-left_bottom_subtitle">Patient ID</h2>
+                                <p class="dashboard1-left_bottom_subtext">02566</p>
+                                <p class="dashboard1-left_bottom_subtext">02566</p>
+                                <p class="dashboard1-left_bottom_subtext">02566</p>
+                            </div>
+                            <div class="dashboard1-left_bottom_item">
+                                <h2 class="dashboard1-left_bottom_subtitle"> Primary Doctor</h2>
+                                <p class="dashboard1-left_bottom_subtext">Dr Alimi James</p>
+                                <p class="dashboard1-left_bottom_subtext">Dr Alimi James</p>
+                                <p class="dashboard1-left_bottom_subtext">Dr Alimi James</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="dashboard1-box_right">
+                    <div class="dashboard1-box_right_top">
+                        <h2 class="dashboard1-box_right_title">
+                            Appointments
+                        </h2>
+                        <img src="./images/image/3tanuqta.png" alt="">
+                    </div>
+                    <hr>
+                    <div class="dashboard1-box_right_bottom">
+                        <div class="dashboard1-box_right_bottom_item">
+                            <div class="dashboard1-box_right_inner">
+                                <img src="./images/image/dashboard1img4.png" alt="">
+                            <div class="dashboard1-box_right_bottom_in">
+                                <p class="dashbpard1-box_right_text">Dr Gbenga Akal</p>
+                                <p class="dashbpard1-box_right_subtext">Gyneacologist</p>
+                                <div class="chase">
+                                    <img src="./images/image/chas.png" alt="">
+                                    <p class="dashbpard1-box_right_chas">8:00AM,  30-06-2023</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div>
+                                <div class="togri">
+                                    <p style="font-size: 13px; font-weight: 400; color: #567B56;">Accept</p>
+                                    <img src="./images/icons/check.png" alt="" style="background-color: #0AC60A; border-radius: 50%; padding: 5px;">
+                                </div>
+                                <div class="inkor">
+                                    <p style="font-size: 13px; font-weight: 400; color: #4B4B4C;">Decline</p>
+                                    <img src="./images/icons/main-x.png" alt="" style="background-color: #CFE3CF; border-radius: 50%; padding: 5px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard1-box_right_bottom_item2">
+                            <div class="dashboard1-box_right_inner">
+                                <img src="./images/image/dashboard1img5.png" alt="">
+                            <div class="dashboard1-box_right_bottom_in">
+                                <p class="dashbpard1-box_right_text">Dr Ola Akintola</p>
+                                <p class="dashbpard1-box_right_subtext">Gyneacologist</p>
+                                <div class="chase">
+                                    <img src="./images/image/chas.png" alt="">
+                                    <p class="dashbpard1-box_right_chas">8:00AM,  30-06-2023</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div>
+                                <div class="togri">
+                                    <p style="font-size: 13px; font-weight: 400; color: #567B56;">Accept</p>
+                                    <img src="./images/icons/check.png" alt="" style="background-color: #0AC60A; border-radius: 50%; padding: 5px;">
+                                </div>
+                                <div class="inkor">
+                                    <p style="font-size: 13px; font-weight: 400; color: #4B4B4C;">Decline</p>
+                                    <img src="./images/icons/main-x.png" alt="" style="background-color: #CFE3CF; border-radius: 50%; padding: 5px;">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="dashboard2">
+            <div class="dash2-card">
+                <h2 class="dash2-card-title">
+                    Transactions
+                </h2>
+                <div class="dash2-card_item">
+                    <img src="./images/icons/search.png" alt="" class="dash2-card_search" width="20px">
+                    <input type="search" class="search" placeholder="Search">
+                </div>
+            </div>
+            <div class="dash2-box">
+                <div class="dash2-box_inner">
+                    <div class="dash2-box_item">
+                        <h2 class="dash2-box_title">21890</h2>
+                        <p class="dash2-box_text">Success Transactions</p>
+                    </div>
+                    <div class="dash2-box_item">
+                        <h2 class="dash2-box_title">180</h2>
+                        <p class="dash2-box_text">Failed Transactions</p>
+                    </div>
+                    <div class="dash2-box_item">
+                        <h2 class="dash2-box_title">21890</h2>
+                        <p class="dash2-box_text">Total Transactions</p>
+                    </div>
+                    <div class="dash2-box_item">
+                        <h2 class="dash2-box_title">1890</h2>
+                        <p class="dash2-box_text">Pending Transactions</p>
+                    </div>
+                </div>
+                <button class="dash2-box_btn">Add new Transaction</button>
+            </div>
+            <div class="dash2-wrap">
+                <div class="dash2-wrap_item">
+                    <h2 class="dash2-wrap_title">No</h2>
+                    <p class="dahs2-wrap_aylana"></p>
+                    <p class="dahs2-wrap_aylana"></p>
+                    <p class="dahs2-wrap_aylana"></p>
+                    <p class="dahs2-wrap_aylana"></p>
+                    <p class="dahs2-wrap_aylana"></p>
+                    <p class="dahs2-wrap_aylana"></p>
+                    <p class="dahs2-wrap_aylana"></p>
+                    <p class="dahs2-wrap_aylana"></p>
+                    <p class="dahs2-wrap_aylana"></p>
+                    <p class="dahs2-wrap_aylana"></p>
+                </div>
+                <div class="dash2-wrap_item">
+                    <h2 class="dash2-wrap_title">Entities</h2>
+                    <p class="dash2-wrap_text">Wade Warren</p>
+                    <p class="dash2-wrap_text">Wade Warren</p>
+                    <p class="dash2-wrap_text">Wade Warren</p>
+                    <p class="dash2-wrap_text">Wade Warren</p>
+                    <p class="dash2-wrap_text">Wade Warren</p>
+                    <p class="dash2-wrap_text">Wade Warren</p>
+                    <p class="dash2-wrap_text">Wade Warren</p>
+                    <p class="dash2-wrap_text">Wade Warren</p>
+                    <p class="dash2-wrap_text">Wade Warren</p>
+                    <p class="dash2-wrap_text">Wade Warren</p>
+                </div>
+                <div class="dash2-wrap_item">
+                    <h2 class="dash2-wrap_title">Service type</h2>
+                    <p class="dash2-wrap_text">Patient </p>
+                    <p class="dash2-wrap_text">Patient </p>
+                    <p class="dash2-wrap_text">Patient </p>
+                    <p class="dash2-wrap_text">Patient </p>
+                    <p class="dash2-wrap_text">Patient </p>
+                    <p class="dash2-wrap_text">Patient </p>
+                    <p class="dash2-wrap_text">Patient </p>
+                    <p class="dash2-wrap_text">Patient </p>
+                    <p class="dash2-wrap_text">Patient </p>
+                    <p class="dash2-wrap_text">Patient </p>
+                </div>
+                <div class="dash2-wrap_item">
+                    <h2 class="dash2-wrap_title">Amount</h2>
+                    <p class="dash2-wrap_text">#670,000</p>
+                    <p class="dash2-wrap_text">#670,000</p>
+                    <p class="dash2-wrap_text">#670,000</p>
+                    <p class="dash2-wrap_text">#670,000</p>
+                    <p class="dash2-wrap_text">#670,000</p>
+                    <p class="dash2-wrap_text">#670,000</p>
+                    <p class="dash2-wrap_text">#670,000</p>
+                    <p class="dash2-wrap_text">#670,000</p>
+                    <p class="dash2-wrap_text">#670,000</p>
+                    <p class="dash2-wrap_text">#670,000</p>
+                </div>
+                <div class="dash2-wrap_item">
+                    <h2 class="dash2-wrap_title">Status</h2>
+                    <div class="dash2-wrap_in">
+                        <p class="dash2-wrap_aylana2"></p>
+                        <p class="dash2-qora">Successful</p>
+                    </div>
+                    <div class="dash2-wrap_in">
+                        <p class="dash2-wrap_aylana2"></p>
+                        <p class="dash2-qora">Successful</p>
+                    </div>
+                    <div class="dash2-wrap_in">
+                        <p class="dash2-wrap_aylana3"></p>
+                        <p class="dash2-qora" style="color: #F5392A;">Pending</p>
+                    </div>
+                    <div class="dash2-wrap_in">
+                        <p class="dash2-wrap_aylana4"></p>
+                        <p class="dash2-qora">Failed</p>
+                    </div>
+                    <div class="dash2-wrap_in">
+                        <p class="dash2-wrap_aylana2"></p>
+                        <p class="dash2-qora">Successful</p>
+                    </div>
+                    <div class="dash2-wrap_in">
+                        <p class="dash2-wrap_aylana3"></p>
+                        <p class="dash2-qora" style="color: #F5392A;">Successful</p>
+                    </div>
+                    <div class="dash2-wrap_in">
+                        <p class="dash2-wrap_aylana2"></p>
+                        <p class="dash2-qora">Failed</p>
+                    </div>
+                    <div class="dash2-wrap_in">
+                        <p class="dash2-wrap_aylana2"></p>
+                        <p class="dash2-qora">Failed</p>
+                    </div>
+                    <div class="dash2-wrap_in">
+                        <p class="dash2-wrap_aylana4"></p>
+                        <p class="dash2-qora" style="color: #F7981D;;">Successful</p>
+                    </div>
+                    <div class="dash2-wrap_in">
+                        <p class="dash2-wrap_aylana2"></p>
+                        <p class="dash2-qora">Pending</p>
+                    </div>
+                </div>
+                <div class="dash2-wrap_item">
+                    <h2 class="dash2-wrap_title">Date</h2>
+                    <p class="dash2-wrap_text">9:30AM, 11/7/16</p>
+                    <p class="dash2-wrap_text">9:30AM, 11/7/16</p>
+                    <p class="dash2-wrap_text">9:30AM, 11/7/16</p>
+                    <p class="dash2-wrap_text">9:30AM, 11/7/16</p>
+                    <p class="dash2-wrap_text">9:30AM, 11/7/16</p>
+                    <p class="dash2-wrap_text">9:30AM, 11/7/16</p>
+                    <p class="dash2-wrap_text">9:30AM, 11/7/16</p>
+                    <p class="dash2-wrap_text">9:30AM, 11/7/16</p>
+                    <p class="dash2-wrap_text">9:30AM, 11/7/16</p>
+                    <p class="dash2-wrap_text">9:30AM, 11/7/16</p>
+                </div>
+                
+                <div class="dash2-wrap-item">
+                    <h2 class="" style="color:#EBF6EB ; padding-bottom: 65px;">1</h2>
+                    <img src="./images/image/3tanuqta.png" alt="" class="dash2-wrap_pic">
+                    <img src="./images/image/3tanuqta.png" alt="" class="dash2-wrap_pic">
+                    <img src="./images/image/3tanuqta.png" alt="" class="dash2-wrap_pic">
+                    <img src="./images/image/3tanuqta.png" alt="" class="dash2-wrap_pic">
+                    <img src="./images/image/3tanuqta.png" alt="" class="dash2-wrap_pic">
+                    <img src="./images/image/3tanuqta.png" alt="" class="dash2-wrap_pic">
+                    <img src="./images/image/3tanuqta.png" alt="" class="dash2-wrap_pic">
+                    <img src="./images/image/3tanuqta.png" alt="" class="dash2-wrap_pic">
+                    <img src="./images/image/3tanuqta.png" alt="" class="dash2-wrap_pic">
+                    <img src="./images/image/3tanuqta.png" alt="" class="dash2-wrap_pic">
+                </div>
+            </div>
+        </div>
+        <div class="dashboard4">
+            <div class="dash4">
+                <div class="dash4-top">
+                    <h1 class="dash4-title">Health records</h1>
+                <div class="dash4-item">
+                    <div class="dash4-search">
+                        <img src="./images/icons/search.png" alt=""  class="search2-img">
+                        <input type="search" placeholder="Search records" class="search2" >
+                    </div>
+                    <button class="dash4-btn" type="submit">Add  records</button>
+                </div>
+                </div>
+                <div class="dash4-center">
+                    <div class="dash4-center_item">
+                        <p class="dash4-center_text">All</p>
+                        <p class="chiziq"></p>
+                    </div>
+                    <div class="dash4-center_item">
+                        <p class="dash4-center_text">Patient Services</p>
+                        <p class="chiziq"></p>
+                    </div>
+                    <div class="dash4-center_item">
+                        <p class="dash4-center_text">Diagnostic Services</p>
+                        <p class="chiziq"></p>
+                    </div>
+                    <div class="dash4-center_item">
+                        <p class="dash4-center_text">Pharmacy Services</p>
+                        <p class="chiziq"></p>
+                    </div>
+                </div>
+                <div class="dash4-bottom">
+                    <div class="dash4-bottom_item">
+                        <div class="dash4-bottom_in">
+                            <h3 class="dash4-bottom_title ">No</h3>
+                            <img src="./images/icons/arrow-right.png" alt="" class="belgi">
+                        </div>
+                        <p class="dash4-bottom_number">556</p>
+                        <p class="dash4-bottom_number">876</p>
+                        <p class="dash4-bottom_number">564</p>
+                        <p class="dash4-bottom_number">443</p>
+                        <p class="dash4-bottom_number">722</p>
+                        <p class="dash4-bottom_number">432</p>
+                        <p class="dash4-bottom_number">345</p>
+                        <p class="dash4-bottom_number">564</p>
+                        <p class="dash4-bottom_number">980</p>
+                        <p class="dash4-bottom_number">556</p>
+                    </div>
+                    <div class="dash4-bottom_inner">
+                        <h3 class="dash4-bottom_subtitle">Full-name</h3>
+                        <div class="dash4-bottom_complect">
+                            <img src="./images/image/Ellipse 162 (1).png" alt="">
+                            <p class="dash4-bottom_name">Wade Warren</p>
+                        </div>
+                        <div class="dash4-bottom_complect">
+                            <img src="./images/image/Ellipse 162 (2).png" alt="">
+                            <p class="dash4-bottom_name">Aremu Femi</p>
+                        </div>
+                        <div class="dash4-bottom_complect">
+                            <img src="./images/image/Ellipse 162 (3).png" alt="">
+                            <p class="dash4-bottom_name">Cody Fisher</p>
+                        </div>
+                        <div class="dash4-bottom_complect">
+                            <img src="./images/image/Ellipse 162 (4).png" alt="">
+                            <p class="dash4-bottom_name">Eleanor Pena</p>
+                        </div>
+                        <div class="dash4-bottom_complect">
+                            <img src="./images/image/Ellipse 162 (5).png" alt="">
+                            <p class="dash4-bottom_name">Bessie Cooper</p>
+                        </div>
+                        <div class="dash4-bottom_complect">
+                            <img src="./images/image/Ellipse 162 (6).png" alt="">
+                            <p class="dash4-bottom_name">Kristin Watson</p>
+                        </div>
+                        <div class="dash4-bottom_complect">
+                            <img src="./images/image/Ellipse 162 (7).png" alt="">
+                            <p class="dash4-bottom_name">Aremu Femi</p>
+                        </div>
+                        <div class="dash4-bottom_complect">
+                            <img src="./images/image/Ellipse 162 (8).png" alt="">
+                            <p class="dash4-bottom_name">Jane Cooper</p>
+                        </div>
+                        <div class="dash4-bottom_complect">
+                            <img src="./images/image/Ellipse 162 (9).png" alt="">
+                            <p class="dash4-bottom_name">Kristin Watson</p>
+                        </div>
+                        <div class="dash4-bottom_complect">
+                            <img src="./images/image/Ellipse 162 (10).png" alt="">
+                            <p class="dash4-bottom_name">Albert Flores</p>
+                        </div>
+                    </div>
+                    <div class="dash4-bottom_item">
+                        <h3 class="dash4-bottom_sarlavha">Record type</h3>
+                        <p class="dash4-bottom_subtext">Quality & Compliance</p>
+                        <p class="dash4-bottom_subtext">Inventory</p>
+                        <p class="dash4-bottom_subtext">Financial </p>
+                        <p class="dash4-bottom_subtext">Patient </p>
+                        <p class="dash4-bottom_subtext">Patient </p>
+                        <p class="dash4-bottom_subtext">Inventory</p>
+                        <p class="dash4-bottom_subtext">Quality & Compliance</p>
+                        <p class="dash4-bottom_subtext">Patient </p>
+                        <p class="dash4-bottom_subtext">Financial </p>
+                        <p class="dash4-bottom_subtext">Inventory</p>
+                    </div>
+                    <div class="dash4-bottom_item">
+                        <h3 class="dash4-bottom_sarlavha">Status</h3>
+                        <p class="dash4-bottom_subtext">Submitted</p>
+                        <p class="dash4-bottom_subtext">Submitted</p>
+                        <p class="dash4-bottom_subtext">Revised</p>
+                        <p class="dash4-bottom_subtext">Submitted</p>
+                        <p class="dash4-bottom_subtext">Submitted</p>
+                        <p class="dash4-bottom_subtext">Submitted</p>
+                        <p class="dash4-bottom_subtext">Revised</p>
+                        <p class="dash4-bottom_subtext">Submitted</p>
+                        <p class="dash4-bottom_subtext">Submitted</p>
+                        <p class="dash4-bottom_subtext">Revised</p>
+                    </div>
+                    <div class="dash4-bottom_item">
+                        <h3 class="dash4-bottom_sarlavha">Date updated</h3>
+                        <p class="dash4-bottom_subtext">10/28/12</p>
+                        <p class="dash4-bottom_subtext">10/28/12</p>
+                        <p class="dash4-bottom_subtext">9/4/12</p>
+                        <p class="dash4-bottom_subtext">10/28/12</p>
+                        <p class="dash4-bottom_subtext">10/28/12</p>
+                        <p class="dash4-bottom_subtext">10/28/12</p>
+                        <p class="dash4-bottom_subtext">9/4/12</p>
+                        <p class="dash4-bottom_subtext">10/28/12</p>
+                        <p class="dash4-bottom_subtext">10/28/12</p>
+                        <p class="dash4-bottom_subtext">9/4/12</p>
+                    </div>
+                    <div class="dash4-bottom_item">
+                        <h3 class="dash4-bottom_sarlavha">Date created</h3>
+                        <p class="dash4-bottom_subtext">8/21/15</p>
+                        <p class="dash4-bottom_subtext">4/4/18</p>
+                        <p class="dash4-bottom_subtext">8/21/15</p>
+                        <p class="dash4-bottom_subtext">7/18/17</p>
+                        <p class="dash4-bottom_subtext">8/21/15</p>
+                        <p class="dash4-bottom_subtext">8/21/15</p>
+                        <p class="dash4-bottom_subtext">4/4/18</p>
+                        <p class="dash4-bottom_subtext">8/21/15</p>
+                        <p class="dash4-bottom_subtext">7/18/17</p>
+                        <p class="dash4-bottom_subtext">8/21/15</p>
+                    </div>
+                    <div class="dash4-bottom_menu">
+                        <h3 class="dash4-yoq">e</h3>
+                        <img src="./images/image/3tanuqta.png" alt="" class="dash4-bottom_pic">
+                        <img src="./images/image/3tanuqta.png" alt="" class="dash4-bottom_pic">
+                        <img src="./images/image/3tanuqta.png" alt="" class="dash4-bottom_pic">
+                        <img src="./images/image/3tanuqta.png" alt="" class="dash4-bottom_pic">
+                        <img src="./images/image/3tanuqta.png" alt="" class="dash4-bottom_pic">
+                        <img src="./images/image/3tanuqta.png" alt="" class="dash4-bottom_pic">
+                        <img src="./images/image/3tanuqta.png" alt="" class="dash4-bottom_pic">
+                        <img src="./images/image/3tanuqta.png" alt="" class="dash4-bottom_pic">
+                        <img src="./images/image/3tanuqta.png" alt="" class="dash4-bottom_pic">
+                        <img src="./images/image/3tanuqta.png" alt="" class="dash4-bottom_pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard5">
+            <div class="dash5">
+                <h1 class="dash5-title">
+                    Analytics
+                </h1>
+                <div class="dash5-top">
+                    <div class="dash5-top_left">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="dash5-top_right">
+                        <canvas id="botirPieChart"></canvas>
+                    </div>
+                </div>
+                <div class="dash5-bottom">
+                    <div class="dash5-bottom_left">
+                        <h2 class="dash5-bottom_left_title">Admission and Discharge Rates</h2>
+                       <div class="dash5-bottom_left_inner">
+                        <div class="dash5-bottom_left_item">
+                            <h3 class="dash5-bottom_left_subtitle">Date</h3>
+                            <p class="dash5-bottom_left_text">   Sep 9, 2023</p>
+                            <p class="dash5-bottom_left_text">   Sep 9, 2023</p>
+                            <p class="dash5-bottom_left_text">   Sep 9, 2023</p>
+                            <p class="dash5-bottom_left_text">   Sep 9, 2023</p>
+                            <p class="dash5-bottom_left_text">   Sep 9, 2023</p>
+                            <p class="dash5-bottom_left_text">   Sep 9, 2023</p>
+                            <p class="dash5-bottom_left_text">   Sep 9, 2023</p>
+                        </div>
+                        <div class="dash5-bottom_left_item">
+                            <h3 class="dash5-bottom_left_subtitle">Total Admissions</h3>
+                            <p class="dash5-bottom_left_text">123</p>
+                            <p class="dash5-bottom_left_text">123</p>
+                            <p class="dash5-bottom_left_text">80</p>
+                            <p class="dash5-bottom_left_text">123</p>
+                            <p class="dash5-bottom_left_text">123</p>
+                            <p class="dash5-bottom_left_text">90</p>
+                            <p class="dash5-bottom_left_text">123</p>
+                        </div>
+                        <div class="dash5-bottom_left_item">
+                            <h3 class="dash5-bottom_left_subtitlee">Total <br> Discharges</h3>
+                            <p class="dash5-bottom_left_text">000023</p>
+                            <p class="dash5-bottom_left_text">000023</p>
+                            <p class="dash5-bottom_left_text">000023</p>
+                            <p class="dash5-bottom_left_text">000023</p>
+                            <p class="dash5-bottom_left_text">000023</p>
+                            <p class="dash5-bottom_left_text">000023</p>
+                            <p class="dash5-bottom_left_text">000023</p>
+                        </div>
+                        <div class="dash5-bottom_left_item">
+                            <h3 class="dash5-bottom_left_subtitle">status</h3>
+                            <div class="dash5-bottom_left_in">
+                                <p style="background-color: #0AC60A;
+                                border-radius: 50%;width: 4px;height: 4px;"></p>
+                                <p style="font-size: 9px; font-weight: 400;color:  #37DE47;
+;">Confirmed</p>
+                            </div>
+                            <div class="dash5-bottom_left_in">
+                                <p style="background-color: #F7981D;width: 4px; height: 4px;border-radius: 50%;"></p>
+                                <p style="font-size: 9px; font-weight: 400; color: #F7981D;">Pending</p>
+                            </div>
+                            <div class="dash5-bottom_left_in">
+                                <p style="background-color: #F5392A;width: 4px;height: 4px;border-radius: 50%;"></p>
+                                <p style="font-size: 9px; font-weight: 400;color: #F5392A;">Declined</p>
+                            </div>
+                            <div class="dash5-bottom_left_in">
+                                <p style="background-color: #0AC60A;
+                                border-radius: 50%;width: 4px;height: 4px;"></p>
+                                <p style="font-size: 9px; font-weight: 400;color:  #37DE47;
+;">Confirmed</p>
+                            </div>
+                            <div class="dash5-bottom_left_in">
+                                <p style="background-color: #F5392A;width: 4px;height: 4px;border-radius: 50%;"></p>
+                                <p style="font-size: 9px; font-weight: 400;color: #F5392A;">Declined</p>
+                            </div>
+                            <div class="dash5-bottom_left_in">
+                                <p style="background-color: #F7981D;width: 4px; height: 4px;border-radius: 50%;"></p>
+                                <p style="font-size: 9px; font-weight: 400; color: #F7981D;">Pending</p>
+                            </div>
+                            <div class="dash5-bottom_left_in">
+                                <p style="background-color: #0AC60A;
+                                border-radius: 50%;width: 4px;height: 4px;"></p>
+                                <p style="font-size: 9px; font-weight: 400;color:  #37DE47;
+;">Confirmed</p>
+                            </div>
+                        </div>
+                        <div class="dash5-bottom_left_item">
+                            <h3 class="dash5-bottom_left_subtitlee">Average Length <br> of Stay</h3>
+                            <p class="dash5-bottom_left_text">3.5 days  </p>
+                            <p class="dash5-bottom_left_text">3.5 days  </p>
+                            <p class="dash5-bottom_left_text">3.5 days  </p>
+                            <p class="dash5-bottom_left_text">3.5 days  </p>
+                            <p class="dash5-bottom_left_text">3.5 days  </p>
+                            <p class="dash5-bottom_left_text">3.5 days  </p>
+                            <p class="dash5-bottom_left_text">3.5 days  </p>
+                        </div>
+                        <div class="dash5-bottom_left_item">
+                            <h1 class="dash5-bottom_left_subtitlee">Net Admission <br> Change</h1>
+                            <p style="color: #0AC60A;font-size: 13px;font-weight: 700; padding-bottom:25px;">+10</p>
+                            <p style="color: #F5392A;font-size: 13px;font-weight: 700;padding-bottom: 25px;">+7</p>
+                            <p style="color: #0AC60A;font-size: 13px;font-weight: 700;padding-bottom: 25px;">+13</p>
+                            <p style="color: #F5392A;font-size: 13px;font-weight: 700;padding-bottom: 25px;">+7</p>
+                            <p style="color: #0AC60A;font-size: 13px;font-weight: 700;padding-bottom: 25px;">+15</p>
+                            <p style="color: #0AC60A;font-size: 13px;font-weight: 700;padding-bottom: 25px;">+15</p>
+                            <p style="color: #0AC60A;font-size: 13px;font-weight: 700;padding-bottom: 25px;">+10</p>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="dash5-bottom_right">
+                        <div class="dash5-bottom_right_top">
+                            <h2 class="dash5-bottom_right_title">Equipment Utilization</h2>
+                            <img src="./images/image/3tanuqta.png" alt="">
+                        </div>
+                        <hr>
+                        <div class="dash5-bottom_right_bottom">
+                            <div class="dash5-bottom_right_item">
+                                <img src="./images/icons/util.png" alt="">
+                                <div class="dash5-bittim_right_in">
+                                    <h2 class="dash5-bottom_right_subtitle">Lorem ipsum</h2>
+                                    <p class="dash5-bottom_right_text">Learn more about our credit cards </p>
+                                </div>
+                            </div>
+                            <div class="dash5-bottom_right_item">
+                                <img src="./images/icons/util.png" alt="">
+                                <div class="dash5-bittim_right_in">
+                                    <h2 class="dash5-bottom_right_subtitle">Lorem ipsum</h2>
+                                    <p class="dash5-bottom_right_text">Learn more about our credit cards </p>
+                                </div>
+                            </div>
+                            <div class="dash5-bottom_right_item">
+                                <img src="./images/icons/util.png" alt="">
+                                <div class="dash5-bittim_right_in">
+                                    <h2 class="dash5-bottom_right_subtitle">Lorem ipsum</h2>
+                                    <p class="dash5-bottom_right_text">Learn more about our credit cards </p>
+                                </div>
+                            </div>
+                            <div class="dash5-bottom_right_item">
+                                <img src="./images/icons/util.png" alt="">
+                                <div class="dash5-bittim_right_in">
+                                    <h2 class="dash5-bottom_right_subtitle">Lorem ipsum</h2>
+                                    <p class="dash5-bottom_right_text">Learn more about our credit cards </p>
+                                </div>
+                            </div>
+                            <div class="dash5-bottom_right_item">
+                                <img src="./images/icons/util.png" alt="">
+                                <div class="dash5-bittim_right_in">
+                                    <h2 class="dash5-bottom_right_subtitle">Lorem ipsum</h2>
+                                    <p class="dash5-bottom_right_text">Learn more about our credit cards </p>
+                                </div>
+                            </div>
+                            <div class="dash5-bottom_right_item">
+                                <img src="./images/icons/util.png" alt="">
+                                <div class="dash5-bittim_right_in">
+                                    <h2 class="dash5-bottom_right_subtitle">Lorem ipsum</h2>
+                                    <p class="dash5-bottom_right_text">Learn more about our credit cards </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard6">
+            <div class="dash6">
+                <div class="dash6-left">
+                    <h1 class="dash6-left_title">
+                        Settings
+                    </h1>
+                    <div class="dash6-inner">
+                        <img src="./images/icons/search.png" alt="" width="20px">
+                        <input type="search" class="search" placeholder="Search setting" >
+                    </div>
+                    <div class="dash6-in">
+                        <p class="dash6-left_text">Access and permission</p>
+                        <img src="./images/icons/arrow-right.png" alt="">
+                    </div>
+                    <div class="dash6-in">
+                        <p class="dash6-left_text">Language settings</p>
+                        <img src="./images/icons/arrow-right.png" alt="">
+                    </div>
+                    <div class="dash6-in">
+                        <p class="dash6-left_text">Notification preference</p>
+                        <img src="./images/icons/arrow-right.png" alt="">
+                    </div><div class="dash6-in">
+                        <p class="dash6-left_text">Data and privacy </p>
+                        <img src="./images/icons/arrow-right.png" alt="">
+                    </div>
+                    <div class="dash6-in">
+                        <p class="dash6-left_text">Backup and recovery option</p>
+                        <img src="./images/icons/arrow-right.png" alt="">
+                    </div>
+                    <div class="dash6-in">
+                        <p class="dash6-left_text">Data and privacy </p>
+                        <img src="./images/icons/arrow-right.png" alt="">
+                    </div>
+                    <div class="dash6-in">
+                        <p class="dash6-left_text">Help and support</p>
+                        <img src="./images/icons/arrow-right.png" alt="">
+                    </div>
+                    <div class="dash6-in">
+                        <p class="dash6-left_text">Log out</p>
+                        <img src="./images/icons/arrow-right.png" alt="">
+                    </div>
+    
+                </div>
+                <hr class="w">
+                <div class="dash6-right">
+                    <h2 class="dash6-right_title">Notification </h2>
+                    <p class="dash6-right_text">Select the notifications you prefer to receive and those you would rather <br> avoid.</p>
+                    <div class="dash6-right_item">
+                        <img src="./images/icons/filter.png" alt="">
+                        <div class="dash6-right_in">
+                            <h3 class="dash6-right_subtitle">Filter</h3>
+                            <p class="dash6-right_subtext">Select the notifications you prefer to receive and those you <br> would rather avoid.</p>
+                        </div>
+                    </div>
+                    <div class="dash6-right_item">
+                        <img src="./images/icons/preference.png" alt="">
+                        <div class="dash6-right_in">
+                            <h3 class="dash6-right_subtitle">Preference</h3>
+                            <p class="dash6-right_subtext">Choose your notification preferences based on the type of <br> notification you prefer.</p>
+                        </div>
+                    </div>
+                    <div class="dash6-right_item">
+                        <img src="./images/icons/lorem.png" alt="">
+                        <div class="dash6-right_in">
+                            <h3 class="dash6-right_subtitle">Lorem</h3>
+                            <p class="dash6-right_subtext">Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc <br> vulputate  .</p>
+                        </div>
+                    </div>
+                    <div class="dash6-right_item">
+                        <img src="./images/icons/nuc.png" alt="">
+                        <div class="dash6-right_in">
+                            <h3 class="dash6-right_subtitle">Lorem</h3>
+                            <p class="dash6-right_subtext">Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc <br> vulputate  .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard3">
+            <div class="dash3">
+                <h1 class="dash3-title">Employees</h1>
+                <div class="dash3-top">
+                    <div class="dash3-top_item">
+                        <p class="dash3-top_text">Status:<small class="dash3-top_small">Full-time (20)</Status:small></p>
+                        <img src="./images/icons/arrow-right.png" alt="">
+                    </div>
+                    <div class="dash3-top_item">
+                        <p class="dash3-top_text">Department:<small class="dash3-top_small">All</small></p>
+                        <img src="./images/icons/arrow-right.png" alt="">
+                    </div>
+                </div>
+                <div class="dash3-bottom">
+                    <div class="dash3-bottom_item">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-pic">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-img">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-img">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-img">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-img">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-img">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-img">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-img">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-img">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-img">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-img">
+                        <img src="./images/image/Vector.png" alt="" class="dash3-img">
+                    </div>
+                    <div class="dash3-bottom_inner">
+                        <h2 class="dash3-bottom_title">Name</h2>
+                        <div class="dash3-bottom_in">
+                            <img src="./images/image/Ellipse 162 (1).png" alt="">
+                            <p class="dash3-bottom_name">
+                                Aisha Aremu 
+                            </p>
+                        </div>
+                        <div class="dash3-bottom_in">
+                            <img src="./images/image/Ellipse 162 (2).png" alt="">
+                            <p class="dash3-bottom_name">
+                                Aremu Femi
+                            </p>
+                        </div>
+                        <div class="dash3-bottom_in">
+                            <img src="./images/image/Ellipse 162 (3).png" alt="">
+                            <p class="dash3-bottom_name">
+                                May White
+                            </p>
+                        </div>
+                        <div class="dash3-bottom_in">
+                            <img src="./images/image/Ellipse 162 (4).png" alt="">
+                            <p class="dash3-bottom_name">
+                                John Mark
+                            </p>
+                        </div>
+                        <div class="dash3-bottom_in">
+                            <img src="./images/image/Ellipse 162 (5).png" alt="">
+                            <p class="dash3-bottom_name">
+                                Anu Richards
+                            </p>
+                        </div>
+                        <div class="dash3-bottom_in">
+                            <img src="./images/image/Ellipse 162 (6).png" alt="">
+                            <p class="dash3-bottom_name">
+                                Olabisi Ade
+                            </p>
+                        </div>
+                        <div class="dash3-bottom_in">
+                            <img src="./images/image/Ellipse 162 (7).png" alt="">
+                            <p class="dash3-bottom_name">
+                                Aremu Femi
+                            </p>
+                        </div>
+                        <div class="dash3-bottom_in">
+                            <img src="./images/image/Ellipse 162 (8).png" alt="">
+                            <p class="dash3-bottom_name">
+                                Paul Dammy
+                            </p>
+                        </div>
+                        <div class="dash3-bottom_in">
+                            <img src="./images/image/Ellipse 162 (9).png" alt="">
+                            <p class="dash3-bottom_name">
+                                Aremu Femi
+                            </p>
+                        </div>
+                        <div class="dash3-bottom_in">
+                            <img src="./images/image/Ellipse 162 (10).png" alt="">
+                            <p class="dash3-bottom_name">
+                                Tolu Racheal
+                            </p>
+                        </div>
+                        <div class="dash3-bottom_in">
+                            <img src="./images/image/Ellipse 162.png" alt="">
+                            <p class="dash3-bottom_name">
+                                Elizabeth Ola
+                            </p>
+                        </div>
+                    </div>
+                    <div class="dash3-bottom_inner">
+                        <h2 class="dash3-bottom_subtitle">Email Address</h2>
+                        <p class="dash3-bottom_subtext">femi@gmail.com</p>
+                        <p class="dash3-bottom_subtext">femi@gmail.com</p>
+                        <p class="dash3-bottom_subtext">femi@gmail.com</p>
+                        <p class="dash3-bottom_subtext">femi@gmail.com</p>
+                        <p class="dash3-bottom_subtext">femi@gmail.com</p>
+                        <p class="dash3-bottom_subtext">femi@gmail.com</p>
+                        <p class="dash3-bottom_subtext">femi@gmail.com</p>
+                        <p class="dash3-bottom_subtext">femi@gmail.com</p>
+                        <p class="dash3-bottom_subtext">femi@gmail.com</p>
+                        <p class="dash3-bottom_subtext">femi@gmail.com</p>
+                        <p class="dash3-bottom_subtext">femi@gmail.com</p>
+                    </div>
+                    <div class="dash3-bottom_inner">
+                        <h2 class="dash3-bottom_subtitle">Phone</h2>
+                        <p class="dash3-bottom_subtext">08133768472</p>
+                        <p class="dash3-bottom_subtext">08133768472</p>
+                        <p class="dash3-bottom_subtext">08133768472</p>
+                        <p class="dash3-bottom_subtext">08133768472</p>
+                        <p class="dash3-bottom_subtext">08133768472</p>
+                        <p class="dash3-bottom_subtext">08133768472</p>
+                        <p class="dash3-bottom_subtext">08133768472</p>
+                        <p class="dash3-bottom_subtext">08133768472</p>
+                        <p class="dash3-bottom_subtext">08133768472</p>
+                        <p class="dash3-bottom_subtext">08133768472</p>
+                        <p class="dash3-bottom_subtext">08133768472</p>
+                    </div>
+                    <div class="dash3-bottom_inner">
+                        <h2 class="dash3-bottom_subtitle">Department</h2>
+                        <p class="dash3-bottom_subtext">Radiology</p>
+                        <p class="dash3-bottom_subtext">Pharmacology</p>
+                        <p class="dash3-bottom_subtext">Radiology</p>
+                        <p class="dash3-bottom_subtext">Radiology</p>
+                        <p class="dash3-bottom_subtext">Radiology</p>
+                        <p class="dash3-bottom_subtext">Radiology</p>
+                        <p class="dash3-bottom_subtext">Pharmacology</p>
+                        <p class="dash3-bottom_subtext">Radiology</p>
+                        <p class="dash3-bottom_subtext">Cardiology</p>
+                        <p class="dash3-bottom_subtext">Radiology</p>
+                        <p class="dash3-bottom_subtext">Cardiology</p>
+                    </div>
+                    <div class="dash3-bottom_inner">
+                        <h2 class="dash3-bottom_subtitle">Employment Status</h2>
+                        <p class="dash3-bottom_subtext">Full- Time</p>
+                        <p class="dash3-bottom_subtext">Full- Time</p>
+                        <p class="dash3-bottom_subtext">Full- Time</p>
+                        <p class="dash3-bottom_subtext">Full- Time</p>
+                        <p class="dash3-bottom_subtext">Full- Time</p>
+                        <p class="dash3-bottom_subtext">Full- Time</p>
+                        <p class="dash3-bottom_subtext">Full- Time</p>
+                        <p class="dash3-bottom_subtext">Full- Time</p>
+                        <p class="dash3-bottom_subtext">Full- Time</p>
+                        <p class="dash3-bottom_subtext">Full- Time</p>
+                        <p class="dash3-bottom_subtext">Full- Time</p>
+                    </div>
+                    <div class="dash3-bottom_inner">
+                        <h2 class="dash3-bottom_subtitle">Action</h2>
+                        <div class="dash3-bottom_imgs">
+                            <img src="./images/icons/bxs_edit.png" alt="">
+                            <img src="./images/icons/mdi_delete-outline.png" alt="">
+                        </div>
+                        <div class="dash3-bottom_imgs">
+                            <img src="./images/icons/bxs_edit.png" alt="">
+                            <img src="./images/icons/mdi_delete-outline.png" alt="">
+                        </div>
+                        <div class="dash3-bottom_imgs">
+                            <img src="./images/icons/bxs_edit.png" alt="">
+                            <img src="./images/icons/mdi_delete-outline.png" alt="">
+                        </div>
+                        <div class="dash3-bottom_imgs">
+                            <img src="./images/icons/bxs_edit.png" alt="">
+                            <img src="./images/icons/mdi_delete-outline.png" alt="">
+                        </div>
+                        <div class="dash3-bottom_imgs">
+                            <img src="./images/icons/bxs_edit.png" alt="">
+                            <img src="./images/icons/mdi_delete-outline.png" alt="">
+                        </div>
+                        <div class="dash3-bottom_imgs">
+                            <img src="./images/icons/bxs_edit.png" alt="">
+                            <img src="./images/icons/mdi_delete-outline.png" alt="">
+                        </div>
+                        <div class="dash3-bottom_imgs">
+                            <img src="./images/icons/bxs_edit.png" alt="">
+                            <img src="./images/icons/mdi_delete-outline.png" alt="">
+                        </div>
+                        <div class="dash3-bottom_imgs">
+                            <img src="./images/icons/bxs_edit.png" alt="">
+                            <img src="./images/icons/mdi_delete-outline.png" alt="">
+                        </div>
+                        <div class="dash3-bottom_imgs">
+                            <img src="./images/icons/bxs_edit.png" alt="">
+                            <img src="./images/icons/mdi_delete-outline.png" alt="">
+                        </div>
+                        <div class="dash3-bottom_imgs">
+                            <img src="./images/icons/bxs_edit.png" alt="">
+                            <img src="./images/icons/mdi_delete-outline.png" alt="">
+                        </div>
+                        <div class="dash3-bottom_imgs">
+                            <img src="./images/icons/bxs_edit.png" alt="">
+                            <img src="./images/icons/mdi_delete-outline.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    </div>
+   </div> 
+   <script src="./js/main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script>
+     // Chart.js kodi
+     const ctx = document.getElementById('myPieChart').getContext('2d');
+        const myPieChart = new Chart(ctx, {
+            type: 'pie', // Diagramma turi (pie)
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: 'My Dataset',
+                    data: [12, 19, 3, 5, 2, 3], // Har bir segmentdagi qiymatlar
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(tooltipItem) {
+                                return tooltipItem.label + ': ' + tooltipItem.raw;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+   </script>
+   <script>
+            const ctx1 = document.getElementById('myBarChart').getContext('2d');
+        const myBarChart = new Chart(ctx1, {
+            type: 'bar', // Diagramma turi (bar)
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Monthly Sales',
+                    data: [65, 59, 80, 81, 56, 55, 40], // Har bir ustundagi qiymatlar
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 99, 132, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    },
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(tooltipItem) {
+                                return tooltipItem.label + ': ' + tooltipItem.raw;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+   </script>
+   <script>
+    const ctx3 = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx3, {
+    type: 'line', // Chizma turi
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'], // X o'qi uchun etiketlar
+        datasets: [{
+            label: 'O\'zgarishlar', // Grafika uchun nom
+            data: [30, 45, 35, 50, 40, 60], // Ma'lumotlar
+            borderColor: 'rgba(75, 192, 192, 1)', // Chizma rangini tanlash
+            borderWidth: 2,
+            fill: false // Chizma ostida rangli maydon ko'rsatish (true bo'lsa)
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true // Y o'qi 0 dan boshlanadi
+            }
+        }
+    }
+});
+   </script>
+   <script>
+    const ctx8 = document.getElementById('botirPieChart').getContext('2d');
+        const botirPieChart = new Chart(ctx8, {
+            type: 'pie', // Grafik turi: aylana grafik
+            data: {
+                labels: ['Qism 1', 'Qism 2', 'Qism 3', 'Qism 4'], // Aylana grafikdagi bo'limlar nomlari
+                datasets: [{
+                    data: [20, 30, 25, 25], // Har bir bo'limning ulushi
+                    backgroundColor: [
+                        '#FF6384', // Birinchi bo'lim uchun rang
+                        '#36A2EB', // Ikkinchi bo'lim uchun rang
+                        '#FFCE56', // Uchinchi bo'lim uchun rang
+                        '#4BC0C0'  // To'rtinchi bo'lim uchun rang
+                    ],
+                    borderColor: [
+                        '#FF6384', // Birinchi bo'lim uchun chegaraning rangi
+                        '#36A2EB', // Ikkinchi bo'lim uchun chegaraning rangi
+                        '#FFCE56', // Uchinchi bo'lim uchun chegaraning rangi
+                        '#4BC0C0'  // To'rtinchi bo'lim uchun chegaraning rangi
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top', // Legenda o'rnini belgilash
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(tooltipItem) {
+                                return tooltipItem.label + ': ' + tooltipItem.raw + '%'; // Tooltipda ko'rsatiladigan matn
+                            }
+                        }
+                    }
+                }
+            }
+        });
+   </script>
+</body>
+</html>
