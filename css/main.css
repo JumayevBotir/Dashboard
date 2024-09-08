@@ -393,6 +393,9 @@ margin: 22px 0px;
     color: #567B56;
     
 }
+.yoqolgan{
+    color:#EBF6EB ; padding-bottom: 65px;
+}
 .dashboard1-left_bottom_subtext{
     font-size: 16px;
     font-weight: var(--font-weiht400);
@@ -731,6 +734,7 @@ margin-bottom: 45px;
     display: flex;
     align-items: start;
     justify-content: space-between;
+    gap: 5px;
 }
 .dash3-title{
     font-size: 34px;
@@ -750,6 +754,14 @@ margin-bottom: 45px;
 
 }
 .dash3-top_item{
+    border: 1px solid var(--main-color);
+    padding: 20px 20px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.dash3-top_itemm{
     border: 1px solid var(--main-color);
     padding: 20px 20px;
     border-radius: 13px;
@@ -1097,7 +1109,9 @@ display: none;
     background: inherit;
   
 }
-
+.dash5-6{
+    font-size: 13px;
+}
 
 @media(max-width:1300px){
     .siderbar{
@@ -1134,8 +1148,201 @@ display: none;
     .dashboard1-box_right{
         width: 98%;
     }
+    .dash2-box_title{
+        font-size: 30px;
+    }
+    .dash2-box_text{
+        font-size: 11px;
+    }
+    .dash2-box_btn{
+        padding: 15px 15px;
+        font-size: 12px;
+    }
+    .dash2-box_inner{
+        gap: 15px;
+    }
+    .dash5-2{
+        display: none;
+    }
+    .dash5-bottom_left_subtitlee{
+        font-size: 11px;
+        padding-bottom: 29px;
+    }
+    .dash5-bottom_left_subtitle{
+        font-size: 11px;
+        
+    }
+    .dash5-bottom_left_text{
+        font-size: 9px;
+    }
+    .dash5-4{
+        font-size: 7px;
+    }
+    .dash5-6{
+        font-size: 9px;
+    }
+    .dash5-bottom_left_in{
+        padding-bottom: 25px;
+    }
+    .dash5-bottom_right_subtitle{
+        font-size: 10px;
+    }
+    .dash5-bottom_right_text{
+        font-size: 8px;
+    }
+    .dash3-5{
+        display: none;
+    }
+    .dash3{
+        margin-right: 10px;
+    }
+
 }
 @media(max-width:800px){
+    .dash2-card-title{
+        font-size: 27px;
+    }
+    .dash2-card_item{
+        width: 200px;
+    }
+    .search{
+        width: 95%;
+    }
+    .dash2-wrap_title{
+        font-size: 15px;
+    }
+    .dash2-wrap_text{
+        font-size: 13px;
+    }
+    .dash2-qora{
+        font-size: 13px;
+    }
+    .dahs2-wrap_aylana{
+        padding: 4px;
+        margin-bottom: 49.6px;
+    }
+    .dash2-wrap_aylana2{
+        padding: 2px;
+    }
+    .dash2-box_title{
+        font-size: 20px;
+    }
+    .dash2-box_text{
+        font-size: 8px;
+    }
+    .dash2-wrap_pic{
+        padding-bottom: 35px;
+    }
+    .yoqolgan{
+         padding-bottom: 58px;
+    }
+    .dash4-bottom_subtitle{
+        font-size: 15px;
+        padding-bottom: 53px;
+    }
+    .dash4-bottom_sarlavha{
+        font-size: 15px;
+    }
+    .dash4-bottom_title{
+        font-size: 15px;
+    }
+    .dash4-bottom_inner img{
+        width: 25px;
+    }
+    .dash4-bottom_subtext{
+        font-size: 12px;
+        padding-bottom: 42.3px;
+    }
+    .dash4-bottom_name{
+        font-size: 12px;
+    }
+    .dash4-bottom_number{
+        font-size: 12px;
+    }
+    .dash4-bottom_complect{
+        padding-bottom: 36px;
+    }
+    .dash4-bottom_in{
+        padding-bottom: 56px;
+    }
+    .dash4-yoq{
+        padding-bottom: 25px;
+    }
+    .dash4-bottom_pic{
+        padding-bottom: 38.2px;
+    }
+    .dash4-title{
+        font-size: 28px;
+    }
+    .search2::placeholder{
+        font-size: 15px;
+    }
+    .dash4-btn{
+        font-size: 15px;
+    }
+    .dash6{
+        display: flex;
+        align-items: start;
+       flex-direction: column;
+        gap: 5px;
+        margin-right: 10px;
+    }
+    .dash6 hr{
+        height: 1px;
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .dash6-left{
+        width: 98%;
+    }
+    .dash3-title{
+        font-size: 27px;
+    }
+    .dash3-top_text{
+        font-size: 14px;
+    }
+    .dash3-top_small{
+        font-size: 14px;
+    }
+    .dash3-top_item{
+        gap: 30px;
+    }
+    .dash3-top_itemm{
+        gap: 30px;
+    }
+    .dash3-bottom_subtext{
+        font-size: 12px;
+    }
+    .dash3-bottom_name{
+        font-size: 12px;
+    }
+    .dash3-1 img{
+        width: 20px;
+    }
+    .dash3-bottom_title{
+        font-size: 15px;
+        padding-bottom: 55px;
+    }
+    .dash3-bottom_subtitle{
+        font-size: 15px;
+    }
+    .dash3-6 img{
+        width: 15px;
+    }
+    .dash3-1 img{
+        width: 15px;
+    }
+    .dash3-bottom_in{
+        padding-bottom: 45px;
+    }
+    .dash3-img{
+        padding-bottom: 48px;
+    }
+    .dash3-bottom_imgs{
+        padding-top: 9px;
+    }
+
 
 }
 @media(max-width:700px){
@@ -1154,12 +1361,47 @@ display: none;
 .dashboard1-box_left img{
     width: 24px;
 }
+.dash4-center_text{
+    font-size: 14px;
+}
+.dash4-center{
+    gap: 15px;
+}
+.dash4-top{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.dash5-bottom_right_title{
+    font-size: 14px;
+}
+.dash5-bottom_left_title{
+    font-size: 14px;
+}
+.dash5-6{
+    display: none;
+}
+.dash5-title{
+    font-size: 27px;
+}
 }
 @media(max-width:600px){
     .col-3{
         flex-basis: 98%;
     }
     .dash1-5{
+        display: none;
+    }
+    .dash2-2{
+        display: none;
+    }
+    .dash4-6{
+        display: none;
+    }
+    .dash6-left_title{
+        font-size: 27px;
+    }
+    .dash3-2{
         display: none;
     }
 
@@ -1204,6 +1446,140 @@ display: none;
     .dash1-3{
         display: none;
     }
-    
+    .dash2-5{
+        display: none;
+    }
+    .dash2-box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 17px;
+    }
+    .dash2-box_btn{
+        width: 95%;
+    }
+    .dash2-wrap_text{
+        font-size: 11px;
+    }
+    .dash2-qora{
+        font-size: 11px;
+    }
+    .dahs2-wrap_aylana{
+        margin-bottom: 45.4px;
 
+    }
+    .dash2-wrap_pic{
+        padding-bottom: 31px;
+    }
+    .dash2-card-title{
+        font-size: 19px;
+    }
+    .dash2-card_search{
+        display: none;
+    }
+    .dash2-card_item{
+        padding: 12px 5px;
+        width: 150px;
+    }
+    .dash4-3{
+        display: none;
+    }
+    .dash4-center_text{
+        font-size: 10px;
+    }
+    .dash4-center{
+        gap: 6px;
+    }
+    .dash4-btn{
+        font-size: 11px;
+    }
+    .search2-img{
+        display: none;
+    }
+    .dash4-search{
+        width: 180px;
+    }
+    .search2{
+        width: 95%;
+    }
+    .dash4-5{
+        display: none;
+    }
+    .dash4-bottom{
+        margin-right: 10px;
+    }
+    .dash5-3{
+        display: none;
+    }
+    .dash5-bottom_right_item img{
+        width: 10px;
+    }
+    .dash5-bottom_right_subtitle{
+        font-size: 8px;
+    }
+    .dash5-bottom_right_text{
+        font-size: 6px;
+    }
+    .dash5-bottom_right_title{
+        font-size: 10px;
+    }
+    .dash5-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+    .dash5-bottom_left{
+        width: 97%;
+    }
+    .dash5-bottom_right{
+        width: 97%;
+    }
+    .dash3-top{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        
+    }
+  .dash3-top_item{
+    width: 300px;
+display: flex;
+justify-content: space-between;
+
+
+}
+  .dash3-top_itemm{
+    width: 300px;
+    display: flex;
+justify-content: space-between;
+  }
+  .dash3-4{
+    display: none;
+  }
+  .dash3-bottom_imgs{
+    padding-bottom: 48px;
+    padding-top: 0px;
+  }
+  .dashboard1-statistika{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 17px;
+  }
+  .chart-container1{
+    width: 98%;
+  }
+  .chart-container{
+    width: 98%;
+  }
+  .dash5-top{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  .dash5-top_left{
+    width: 98%;
+  }
+  .dash5-top_right{
+    width: 98%;
+  }
 }
