@@ -45,10 +45,24 @@ function switchClick () {
 }
 
 
-// for(let i=0; i<3; i++) {
-//     console.log(i, 'i ==>>',addCardInfo, cardInfo);
-    
-//     // const addElement = ;
-//     cardInfo.appendChild(addCardInfo)
-// }
+
+
+const mainRR = document.getElementById('main-render');
+const menuSelect = document.getElementById('menuSelect');
+
+function menuOnSelect() {
+    const selectedIndex = parseInt(menuSelect.value); // Tanlangan variantning qiymatini olish
+    Array.from(mainRR.children).forEach((child, index) => {
+        child.style.display = (index === selectedIndex) ? 'block' : 'none';
+    });
+}
+
+// `change` voqeasini tinglash
+menuSelect.addEventListener('change', menuOnSelect);
+
+// Sahifa yuklanganda birinchi tanlovni ko'rsatish
+menuOnSelect();
+
+
+
 

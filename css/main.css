@@ -161,15 +161,17 @@ a{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    /* flex-wrap: wrap; */
+    gap: 5px;
+   padding-right: 10px;
 }
 
 .col-3 {
-    flex-basis: calc(((100%/4) - 20px));
+    flex-basis: 24%;
 }
 .car-info {
-    width: 100%;
+    width: 100%
+    ;
     background-color: var(--color-white);
     margin-top: 10px;
     border-radius: 12px;
@@ -250,8 +252,7 @@ margin: 22px 0px;
 }
 .app{
     display: flex;
-    align-items: end;
-    justify-content: end;
+   justify-content: end;
     background-color: #fff;
     box-shadow: 0px 4.93px 4.93px 0px #00000040;
     width: 80%;
@@ -414,6 +415,7 @@ margin: 22px 0px;
 }
 .dashboard1-box{
     padding-top: 10px;
+    padding-right: 5px;
 }
 .dashboard1-box_right{
     background-color: var(--color-white);
@@ -1080,4 +1082,128 @@ margin-bottom: 45px;
     display: flex;
     justify-content: space-between;
     margin-right: 5px;
+}
+.nav2{
+    border: 1px solid #0AC60A;
+    border-radius: 10px;
+   padding: 15px 18px;
+display: none;
+}
+.nav2-items{
+    border: transparent;
+    color: #0AC60A;
+    font-size: 20px;
+    font-weight: 600;
+    background: inherit;
+  
+}
+
+
+@media(max-width:1300px){
+    .siderbar{
+        display: none;
+    }
+    .main-wrapper{
+        width: 100%;
+    }
+    .app{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav2{
+        display: block;
+    }
+}
+@media(max-width:1100px){
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-3{
+        flex-basis: 48%;
+    }
+    .dashboard1-box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .dashboard1-box_left{
+        width: 98%;
+    }
+    .dashboard1-box_right{
+        width: 98%;
+    }
+}
+@media(max-width:800px){
+
+}
+@media(max-width:700px){
+    .dashboard1-left_bottom_title{
+    font-size: 12px;
+}
+.dashboard1-left_bottom_subtitle{
+    font-size: 12px;
+}
+.dashboard1-left_text{
+    font-size: 12px;
+}
+.dashboard1-left_bottom_subtext{
+    font-size: 12px;
+}
+.dashboard1-box_left img{
+    width: 24px;
+}
+}
+@media(max-width:600px){
+    .col-3{
+        flex-basis: 98%;
+    }
+    .dash1-5{
+        display: none;
+    }
+
+}
+@media(max-width:500px){
+    .dash1-4{
+        display: none;
+    }
+    .odam{
+        width: 35px;
+    }
+    .soat{
+        width: 10px;
+    }
+    .dashbpard1-box_right_text{
+        font-size: 12px;
+    }
+    .dashbpard1-box_right_subtext{
+        font-size: 12px;
+    }
+    .dashbpard1-box_right_chas{
+        font-size: 8px;
+    }
+    .dashboard1-box_left_title{
+        font-size: 15px;
+    }
+    .dashboard1-link{
+        font-size: 11px;
+    }
+    .dashboard1-box_left_item{
+        gap: 5px;
+    }
+    .app-right{
+        display: none;
+    }
+    .nav2-items{
+        font-size: 16px;
+    }
+    .app-ayol{
+        display: none;
+    }
+    .dash1-3{
+        display: none;
+    }
+    
+
 }
